@@ -9,7 +9,9 @@ import tseslint from "typescript-eslint"
 import { defineConfig, globalIgnores } from "eslint/config"
 
 export default defineConfig([
-  globalIgnores(["dist"]),
+  // src/components/ui: shadcn registry output. Vendored as-is, so our formatting
+  // and import-order rules would only produce noise on every `shadcn add`.
+  globalIgnores(["dist", "src/components/ui"]),
   {
     files: ["**/*.{ts,tsx}"],
     extends: [

@@ -3,5 +3,14 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  /* Duplicated from tsconfig.app.json: tools that read only the root config
+     (e.g. the shadcn CLI) do not follow project references. TypeScript 6
+     rejects the "baseUrl" the shadcn guide pairs with this, so paths resolve
+     relative to this file instead. */
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
 }
