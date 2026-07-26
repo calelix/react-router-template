@@ -1,7 +1,4 @@
 {
-  "env": {
-    "ANTHROPIC_BASE_URL": "http://127.0.0.1:9801"
-  },
   "enabledPlugins": {
     "context7@claude-plugins-official": true
   },
