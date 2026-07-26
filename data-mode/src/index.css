@@ -1,8 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
+@import "@fontsource-variable/inter";
 
 @custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: 'Inter Variable', sans-serif;
+  --font-heading: var(--font-sans);
+}
 
 @theme inline {
   --color-sidebar-ring: var(--sidebar-ring);
