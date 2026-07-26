@@ -4,7 +4,7 @@ export function HomePage() {
       <h1 className="text-4xl font-bold">
         Home
       </h1>
-      <p className="text-gray-500">
+      <p className="text-muted-foreground">
         Data Mode Template
       </p>
     </main>
