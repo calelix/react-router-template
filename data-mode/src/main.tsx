@@ -5,9 +5,12 @@ import { createRoot } from "react-dom/client"
 import { RouterProvider } from "react-router"
 
 import { router } from "@/app/routes/routes"
+import { TooltipProvider } from "@/components/ui/tooltip"
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <TooltipProvider>
+      <RouterProvider router={router} />
+    </TooltipProvider>
   </StrictMode>
 )
